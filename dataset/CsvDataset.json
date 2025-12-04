@@ -1,0 +1,22 @@
+{
+	"name": "CsvDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_ncakic",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "ingress"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
