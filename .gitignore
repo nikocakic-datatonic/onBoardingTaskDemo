@@ -205,3 +205,15 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# Sensitive data
+.env
+*.env
+connection_strings.txt
+secrets/
+review_data/
+*.csv
+*.parquet
+__pycache__/
+*.pyc
+venv/
+.venv/
