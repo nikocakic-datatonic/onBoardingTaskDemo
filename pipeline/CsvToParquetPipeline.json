@@ -1,0 +1,7 @@
+{
+	"name": "CsvToParquetPipeline",
+	"properties": {
+		"description": "Convert CSV files to Parquet every 15 minutes",
+		"annotations": []
+	}
+}
