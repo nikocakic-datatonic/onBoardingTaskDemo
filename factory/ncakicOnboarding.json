@@ -1,0 +1,9 @@
+{
+	"name": "ncakicOnboarding",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "832f6d8c-9313-4770-9b1e-c2ca8b472c6d",
+		"tenantId": "e27500de-8438-45fb-8228-8bf0cc45248b"
+	}
+}
