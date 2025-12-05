@@ -1,0 +1,32 @@
+{
+	"name": "WatermarkDataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_ncakic",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "watermark.csv",
+				"container": "adf-watermark"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "TableName",
+				"type": "String"
+			},
+			{
+				"name": "WatermarkValue",
+				"type": "String"
+			}
+		]
+	}
+}
