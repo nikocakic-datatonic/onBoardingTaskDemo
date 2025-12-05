@@ -1,21 +1,18 @@
 {
-	"name": "CsvDataset",
+	"name": "ParquetDataset",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzureBlobStorage_ncakic",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
-		"type": "DelimitedText",
+		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"container": "reviews"
+				"container": "ingress"
 			},
-			"columnDelimiter": ",",
-			"escapeChar": "\\",
-			"firstRowAsHeader": true,
-			"quoteChar": "\""
+			"compressionCodec": "snappy"
 		},
 		"schema": []
 	}
